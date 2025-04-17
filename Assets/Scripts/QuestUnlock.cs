@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class QuestUnlock : MonoBehaviour
+{
+    [SerializeField] private ClickerButton button;
+
+    int scoreThreshold = 0;
+
+    [SerializeField] GameObject Quest1;
+    [SerializeField] GameObject Quest2;
+    [SerializeField] GameObject Quest3;
+    [SerializeField] GameObject Quest4;
+
+    private void Start()
+    {
+        Quest1.SetActive(false);
+        Quest2.SetActive(false);
+        Quest3.SetActive(false);
+        Quest4.SetActive(false);
+    }
+
+    void Update()
+    {
+        scoreThreshold = button.score;
+        UnlockQuest();
+    }
+
+
+    private void UnlockQuest()
+    { 
+        if(scoreThreshold > 10) 
+        {
+            Quest1.SetActive(true);
+        }
+        if (scoreThreshold > 15)
+        {
+            Quest2.SetActive(true);
+        }
+        if (scoreThreshold > 20)
+        {
+            Quest3.SetActive(true);
+        }
+        if (scoreThreshold > 25)
+        {
+            Quest4.SetActive(true);
+        }
+    }
+
+
+}
