@@ -10,7 +10,10 @@ public class BoatPunsScript : MonoBehaviour
     [SerializeField] private TextMeshProUGUI displayText;
 
 
-
+    void RandomizePuns()
+    { 
+    
+    }
 
     // Start is called before the first frame update
     void Start()
