@@ -1,11 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class MainMenuButtons : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
-    internal GameObject Options, Menu, Gameplay, Pause, Credits;
+    [Header("UI Screens")]
+    public GameObject Options;
+    public GameObject Menu;
+    public GameObject Gameplay;
+    public GameObject Pause;
+    public GameObject Credits;
+
+    [Header("Options Volume Sliders")]
+    public Slider GameplayVolume;
+    public Slider MusicVolume;
 
     private void Start()
     {
@@ -22,6 +33,7 @@ public class MainMenuButtons : MonoBehaviour
         Menu.gameObject.SetActive(false);
         Gameplay.gameObject.SetActive(false);
         Pause.gameObject.SetActive(false);
+        Credits.gameObject.SetActive(false);
     }
 
     public void Starting()
