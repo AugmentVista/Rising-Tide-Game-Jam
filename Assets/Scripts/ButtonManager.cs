@@ -14,6 +14,35 @@ public class ButtonManager : MonoBehaviour
     public GameObject Pause;
     public GameObject Credits;
 
+    private GameObject LastScreenActive;
+
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+    // Add Last Screen Active Logic
+
+
+
     [Header("Options Volume Sliders")]
     public Slider GameplayVolume;
     public Slider MusicVolume;
@@ -36,7 +65,9 @@ public class ButtonManager : MonoBehaviour
         Credits.gameObject.SetActive(false);
     }
 
-    public void Starting()
+    // All Buttons start with B to make them easier to find in unity
+
+    public void BStarting()
     {
         SetUIFalse();
 
@@ -45,19 +76,19 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Quiting()
+    public void BQuiting()
     {
         Application.Quit();
     }
 
-    public void OptionsMenu()
+    public void BOptionsMenu()
     {
         SetUIFalse();
 
         Options.gameObject.SetActive(true);
     }
 
-    public void CreditsMenu()
+    public void BCreditsMenu()
     {
         SetUIFalse();
 
