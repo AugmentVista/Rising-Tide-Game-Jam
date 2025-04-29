@@ -16,33 +16,6 @@ public class ButtonManager : MonoBehaviour
 
     private GameObject LastScreenActive;
 
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-    // Add Last Screen Active Logic
-
-
-
     [Header("Options Volume Sliders")]
     public Slider GameplayVolume;
     public Slider MusicVolume;
@@ -65,13 +38,38 @@ public class ButtonManager : MonoBehaviour
         Credits.gameObject.SetActive(false);
     }
 
+    private GameObject GetCurrentActiveScreen()
+    {
+        if (Options.activeSelf) return Options;
+        if (Menu.activeSelf) return Menu;
+        if (Gameplay.activeSelf) return Gameplay;
+        if (Pause.activeSelf) return Pause;
+        if (Credits.activeSelf) return Credits;
+        return null;
+    }
+
+    private void SetScreen(GameObject newScreen)
+    {
+        if (newScreen == null)
+            return;
+
+        // Save the currently active screen before switching
+        if (LastScreenActive != null && LastScreenActive != newScreen && LastScreenActive.activeSelf)
+        {
+            LastScreenActive = GetCurrentActiveScreen();
+        }
+
+        SetUIFalse();
+        newScreen.SetActive(true);
+    }
+
     // All Buttons start with B to make them easier to find in unity
 
     public void BStarting()
     {
-        SetUIFalse();
+        LastScreenActive = GetCurrentActiveScreen();
 
-        Gameplay.gameObject.SetActive(true);
+        SetScreen(Gameplay);
 
         Time.timeScale = 1;
     }
@@ -83,15 +81,19 @@ public class ButtonManager : MonoBehaviour
 
     public void BOptionsMenu()
     {
-        SetUIFalse();
+        LastScreenActive = GetCurrentActiveScreen();
 
-        Options.gameObject.SetActive(true);
+        SetScreen(Options);
+
+        Time.timeScale = 0;
     }
 
     public void BCreditsMenu()
     {
-        SetUIFalse();
+        LastScreenActive = GetCurrentActiveScreen();
 
-        Credits.gameObject.SetActive(true);
+        SetScreen(Options);
+
+        Time.timeScale = 0;
     }
 }
