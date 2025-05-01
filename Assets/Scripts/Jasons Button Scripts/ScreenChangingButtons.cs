@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonManager : MonoBehaviour
+public class ScreenChangingButtons : MonoBehaviour
 {
     [Header("UI Screens")]
     public GameObject Options;
@@ -15,10 +13,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject Credits;
 
     private GameObject LastScreenActive;
-
-    [Header("Options Volume Sliders")]
-    public Slider GameplayVolume;
-    public Slider MusicVolume;
 
     private void Start()
     {
@@ -59,10 +53,19 @@ public class ButtonManager : MonoBehaviour
             LastScreenActive = GetCurrentActiveScreen();
         }
 
+        if (newScreen == Gameplay)
+        {
+            Time.timeScale = 1;
+        }
+        else
+        {
+            Time.timeScale = 0;
+        }
+
         SetUIFalse();
         newScreen.SetActive(true);
     }
-
+    
     // All Buttons start with B to make them easier to find in unity
 
     public void BStarting()
@@ -74,9 +77,13 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void BQuiting()
+    public void BCreditsMenu()
     {
-        Application.Quit();
+        LastScreenActive = GetCurrentActiveScreen();
+
+        SetScreen(Options);
+
+        Time.timeScale = 0;
     }
 
     public void BOptionsMenu()
@@ -88,12 +95,27 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void BCreditsMenu()
+    public void BPause()
     {
         LastScreenActive = GetCurrentActiveScreen();
 
-        SetScreen(Options);
+        SetScreen(Pause);
+    }
+
+    public void BReturn()
+    {
+        SetScreen(LastScreenActive);
+    }
+
+    public void BToMainMenu()
+    {
+        SetScreen(Menu);
 
         Time.timeScale = 0;
+    }
+
+    public void BQuiting()
+    {
+        Application.Quit();
     }
 }
