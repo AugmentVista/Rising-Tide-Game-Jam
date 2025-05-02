@@ -1,11 +1,10 @@
-using TMPro;
 using UnityEngine;
 
 public class ClickerButton : MonoBehaviour
 {
     public ScoreDisplay scoreDisplay;
 
-    public float score;
+    private float score = 1;
 
     private void Start()
     {
@@ -19,7 +18,8 @@ public class ClickerButton : MonoBehaviour
 
     public void OnButtonClick()
     {
-        score++;
-        scoreDisplay.GetScore(score);
+        Debug.Log($"ClickerButton is calling UpdateScore on {scoreDisplay.gameObject.name}");
+
+        scoreDisplay.UpdateScore(score);
     }
 }

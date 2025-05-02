@@ -23,8 +23,8 @@ public class QuestUnlock : MonoBehaviour
 
     void Update()
     {
-        scoreThreshold = button.score;
-        UnlockQuest();
+        //
+        //UnlockQuest();
     }
 
 

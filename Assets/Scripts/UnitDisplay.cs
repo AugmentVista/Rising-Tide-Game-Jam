@@ -15,6 +15,8 @@ public class UnitDisplay : MonoBehaviour
 
     public TMP_Text hireText;
 
+    public TMP_Text priceText;
+
     public TMP_Text damagePerSecond;
 
     public GameObject infoPanel;
@@ -29,7 +31,9 @@ public class UnitDisplay : MonoBehaviour
 
         unitSprite.sprite = unit.unitImage;
 
-        damagePerSecond.text = unit.damagePerSecond.ToString() + " damage per second ";
+        priceText.text = unit.price.ToString();
+
+        damagePerSecond.text = unit.damagePerSecond.ToString() + " damage per second";
 
         infoPanel = unit.infoPanel;
 
