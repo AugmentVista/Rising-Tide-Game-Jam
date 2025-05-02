@@ -451,10 +451,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 5
-        width: 1272
+        width: 1275
         height: 1273
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,6 +462,48 @@ TextureImporter:
       bones: []
       spriteID: 779e981274987a94dafd0bde6cd9a84b
       internalID: -1399732869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papper_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 622
+        width: 691
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103218cedd51c164492194645dc2823b
+      internalID: 1150151521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Papper_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 55
+        width: 1229
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684ae724f01f445488da54f00f2a5f0d
+      internalID: -796071055
       vertices: []
       indices: 
       edges: []
@@ -486,6 +528,8 @@ TextureImporter:
       Papper_14: -330546168
       Papper_15: 1405168007
       Papper_16: -1399732869
+      Papper_17: 1150151521
+      Papper_18: -796071055
       Papper_2: 1586379477
       Papper_3: -724198716
       Papper_4: 1439924364
