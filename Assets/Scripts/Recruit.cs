@@ -9,6 +9,8 @@ public class Recruit : ScriptableObject
 
     public string hireText;
 
+    public float price;
+
     public Sprite unitImage;
 
     public float damagePerSecond;

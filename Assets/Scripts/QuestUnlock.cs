@@ -6,7 +6,7 @@ public class QuestUnlock : MonoBehaviour
 {
     [SerializeField] private ClickerButton button;
 
-    int scoreThreshold = 0;
+    float scoreThreshold = 0;
 
     [SerializeField] GameObject Quest1;
     [SerializeField] GameObject Quest2;
@@ -23,8 +23,8 @@ public class QuestUnlock : MonoBehaviour
 
     void Update()
     {
-        scoreThreshold = button.score;
-        UnlockQuest();
+        //
+        //UnlockQuest();
     }
 
 
