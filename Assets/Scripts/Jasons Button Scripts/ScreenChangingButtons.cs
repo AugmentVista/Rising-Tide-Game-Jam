@@ -100,6 +100,8 @@ public class ScreenChangingButtons : MonoBehaviour
         LastScreenActive = GetCurrentActiveScreen();
 
         SetScreen(Pause);
+
+        Time.timeScale = 0;
     }
 
     public void BReturn()
