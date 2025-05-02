@@ -7,15 +7,20 @@ public class ScoreDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    public float score;
 
-    void Start()
+
+    public void GetScore(float newScore)
     {
-        scoreText.text = "John Smith's Sloop\r\n\r\nScore: small NUMBER";
+        score = newScore;
+        scoreText.text = $"John Smith's Sloop Score: {score} ";
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0; i < 20; i++) { Debug.Log($"score is {score}"); if (i > 20) { i = 0; } }
+
+            
+
     }
 }

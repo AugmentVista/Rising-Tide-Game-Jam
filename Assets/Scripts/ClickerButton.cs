@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class ClickerButton : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI scoreText;
+    public ScoreDisplay scoreDisplay;
 
-    public int score = 0;
+    public float score;
 
-
+    private void Start()
+    {
+        scoreDisplay = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreDisplay>();
+        if (scoreDisplay != null)
+        {
+            Debug.Log("ScoreDisplay successfully connected.");
+        }
+        else { Debug.Log("ScoreDisplay failed to connect."); }
+    }
 
     public void OnButtonClick()
     {
         score++;
-        scoreText.text = $"John Smith's Sloop Score: {score} small NUMBER";
+        scoreDisplay.GetScore(score);
     }
 }

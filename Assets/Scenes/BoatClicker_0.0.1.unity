@@ -1238,7 +1238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &346612952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3066,18 +3066,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926151150}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1857566799}
   - {fileID: 1657826362}
-  m_Father: {fileID: 2003361231}
+  m_Father: {fileID: 1308044968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -591.4, y: 93.3}
+  m_AnchoredPosition: {x: -656.4, y: 117.3}
   m_SizeDelta: {x: 310.27, y: 294.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926151152
@@ -3187,6 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 304592449}
+  scoreDisplay: {fileID: 0}
   score: 0
 --- !u!1 &968142483
 GameObject:
@@ -3479,7 +3480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1065313474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3497,6 +3498,7 @@ RectTransform:
   - {fileID: 165090384}
   - {fileID: 1603412094}
   - {fileID: 2104926935}
+  - {fileID: 1582097574}
   m_Father: {fileID: 2003361231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3877,7 +3879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1286423595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4109,6 +4111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308044968}
+  - component: {fileID: 1308044969}
   m_Layer: 5
   m_Name: Score Tracker
   m_TagString: Untagged
@@ -4130,6 +4133,7 @@ RectTransform:
   m_Children:
   - {fileID: 304592448}
   - {fileID: 143629587}
+  - {fileID: 926151151}
   m_Father: {fileID: 2003361231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4137,6 +4141,20 @@ RectTransform:
   m_AnchoredPosition: {x: 65, y: -24}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308044969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308044967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4d8c8e395395647b43f06c3e74a2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 143629588}
+  score: 0
 --- !u!1 &1416096625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,7 +4631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1554537271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4766,7 +4784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1582097574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4774,16 +4792,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582097573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.92625004, y: 4.05, z: 1}
+  m_LocalScale: {x: 0.9262501, y: 4.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2003361231}
+  m_Father: {fileID: 1065313474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27, y: 11.86}
+  m_AnchoredPosition: {x: -663.00006, y: 283.86002}
   m_SizeDelta: {x: 639.04, y: 123.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582097575
@@ -5184,6 +5202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 304592449}
+  score: 0
 --- !u!4 &1699264163
 Transform:
   m_ObjectHideFlags: 0
@@ -5868,10 +5887,8 @@ RectTransform:
   - {fileID: 2048584907}
   - {fileID: 890283328}
   - {fileID: 1286423595}
-  - {fileID: 1582097574}
   - {fileID: 1065313474}
   - {fileID: 1308044968}
-  - {fileID: 926151151}
   - {fileID: 968142484}
   - {fileID: 1416096626}
   - {fileID: 504666703}
