@@ -15,7 +15,7 @@ MonoBehaviour:
   nameOfUnit: Pirate
   levelOfUnit: 0
   hireText: Hire
-  price: 50
+  price: 20
   unitImage: {fileID: 21300000, guid: 54bc5b9979d753d40999dccdc9dfdd8e, type: 3}
-  damagePerSecond: 1.5
+  damagePerSecond: 5
   infoPanel: {fileID: 0}

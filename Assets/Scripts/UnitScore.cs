@@ -7,6 +7,8 @@ public class UnitScore : MonoBehaviour
 
     public ScoreDisplay scoreDisplay;
 
+    public PurchaseManager purchaseManager;
+
     private float unitScoreContribution;
 
     [SerializeField] private bool purchased;
@@ -17,12 +19,20 @@ public class UnitScore : MonoBehaviour
     private void Start()
     {
         unitScoreContribution = unit.damagePerSecond;
+
         scoreDisplay = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreDisplay>();
         if (scoreDisplay != null)
         {
             Debug.Log("ScoreDisplay successfully connected to UnitScore.");
         }
         else { Debug.Log("ScoreDisplay failed to connect to UnitScore"); }
+
+        purchaseManager = GameObject.FindGameObjectWithTag("PurchaseManager").GetComponent<PurchaseManager>();
+        if (purchaseManager != null)
+        {
+            Debug.Log("PurchaseManager successfully connected to UnitScore.");
+        }
+        else { Debug.Log("PurchaseManager failed to connect to UnitScore"); }
     }
 
     void FixedUpdate()
@@ -38,9 +48,28 @@ public class UnitScore : MonoBehaviour
         }
     }
 
+    public bool CanPlayerAffordThis(float cost)
+    {
+        float publicScore = scoreDisplay.publicScore;
+        if (publicScore - cost >= 0)
+        {
+            scoreDisplay.UpdateScore(-cost);
+            return true;
+        }
+        else return false;
+    }
+
     public void PurchaseUnit()
     {
-        if (!purchased) { purchased = true; }
+        if (!purchased)
+        {
+            if (CanPlayerAffordThis(unit.price))
+            {
+                { purchased = true; }
+            }
+        }
+            
     }
+
 
 }
