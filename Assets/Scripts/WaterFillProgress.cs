@@ -6,20 +6,18 @@ using System.Collections.Generic;
 public class WaterFillProgress : MonoBehaviour
 {
     public Image waterImage;
-
+    public Slider boatSlider;
     public ScoreDisplay scoreDisplay;
-
     public TextMeshProUGUI waveCount;
 
     private int waveCountInt = 0;
-
     private float threshold = 10000f;
-
     private List<string> shipNames = new List<string>();
 
     void Start()
     {
         waterImage.fillAmount = 0f;
+        boatSlider.value = 0f;
         shipNames.Add("Sloop");
         shipNames.Add("Schooner");
         shipNames.Add("Brigantine");
@@ -35,8 +33,11 @@ public class WaterFillProgress : MonoBehaviour
     void Update()
     {
         waterImage.fillAmount = scoreDisplay.publicScore / threshold;
+        boatSlider.value = waterImage.fillAmount;
+
         scoreDisplay.shipName = shipNames[waveCountInt].ToString();
-        if (waterImage.fillAmount == 1.0f)
+
+        if (waterImage.fillAmount >= 1.0f)
         {
             waveCountInt++;
             waveCount.text = "Wave " + waveCountInt.ToString();
