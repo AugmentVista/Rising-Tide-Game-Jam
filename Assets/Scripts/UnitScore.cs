@@ -39,9 +39,11 @@ public class UnitScore : MonoBehaviour
         {
             if (purchased) 
             { 
-                scoreDisplay.UpdateScore(unitScoreContribution * unitCount); 
+                scoreDisplay.UpdateScore(unitScoreContribution * unitCount);
+                float totalDPS = unitScoreContribution * unitCount;
+                unitDisplay.damagePerSecond.text = totalDPS.ToString() + " Total damage per second";
                 Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
-            } 
+            }
             timer = 0; 
         }
     }
@@ -59,21 +61,12 @@ public class UnitScore : MonoBehaviour
 
     public void PurchaseUnit()
     {
-        if (!purchased)
+        if (!purchased || unitCount > 0)
         {
             if (CanPlayerAffordThis(localPrice))
             {
-                { purchased = true; }
-                unitCount++;
-                localPrice *= priceEscalationRate;
-                unitDisplay.priceText.text = localPrice.ToString("F2");
-                unitDisplay.levelOfUnit.text = unitCount.ToString();
-            }
-        }
-        if (unitCount > 0) 
-        {
-            if (CanPlayerAffordThis(localPrice))
-            {
+                if (!purchased) { purchased = true; } 
+                
                 unitCount++;
                 localPrice *= priceEscalationRate;
                 unitDisplay.priceText.text = localPrice.ToString("F2");
