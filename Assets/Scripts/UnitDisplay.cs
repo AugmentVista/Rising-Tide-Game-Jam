@@ -38,9 +38,4 @@ public class UnitDisplay : MonoBehaviour
         infoPanel = unit.infoPanel;
     }
 
-    public bool IsTitleMatch(string titleToCheck)
-    {
-        return nameOfUnit.text.Equals(titleToCheck, StringComparison.OrdinalIgnoreCase);
-    }
-
 }
