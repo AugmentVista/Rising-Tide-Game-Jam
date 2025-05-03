@@ -41,7 +41,7 @@ public class UnitScore : MonoBehaviour
             { 
                 scoreDisplay.UpdateScore(unitScoreContribution * unitCount);
                 float totalDPS = unitScoreContribution * unitCount;
-                unitDisplay.damagePerSecond.text = totalDPS.ToString() + " Total damage per second";
+                unitDisplay.damagePerSecond.text = totalDPS.ToString() + " Total dps";
                 Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
             }
             timer = 0; 
