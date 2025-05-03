@@ -7,6 +7,8 @@ public class ScoreDisplay : MonoBehaviour
 
     [SerializeField] private float score = 0;
 
+    public string shipName;
+
     public float publicScore = 0;
 
     private int delay = 200;
@@ -18,7 +20,7 @@ public class ScoreDisplay : MonoBehaviour
         score += scoreToAdd;
         Debug.Log($"Clickerscore is {scoreToAdd}");
 
-        scoreText.text = $"John Smith's Sloop Score: {score:F2}";
+        scoreText.text = $"John Smith's {shipName} Score: {score:F2}";
         publicScore = score;
     }
 

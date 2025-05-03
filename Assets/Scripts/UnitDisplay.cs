@@ -36,12 +36,6 @@ public class UnitDisplay : MonoBehaviour
         damagePerSecond.text = unit.damagePerSecond.ToString() + " damage per second";
 
         infoPanel = unit.infoPanel;
-
-    }
-
-    public bool IsTitleMatch(string titleToCheck)
-    {
-        return nameOfUnit.text.Equals(titleToCheck, StringComparison.OrdinalIgnoreCase);
     }
 
 }

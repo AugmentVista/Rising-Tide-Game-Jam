@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestUnlock : MonoBehaviour
 {
-    [SerializeField] private ClickerButton button;
+    public ScoreDisplay scoreDisplay;
 
     float scoreThreshold = 0;
 
@@ -23,8 +23,8 @@ public class QuestUnlock : MonoBehaviour
 
     void Update()
     {
-        //
-        //UnlockQuest();
+        scoreThreshold = scoreDisplay.publicScore;
+        UnlockQuest();
     }
 
 
@@ -34,15 +34,15 @@ public class QuestUnlock : MonoBehaviour
         {
             Quest1.SetActive(true);
         }
-        if (scoreThreshold > 15)
+        if (scoreThreshold > 150)
         {
             Quest2.SetActive(true);
         }
-        if (scoreThreshold > 20)
+        if (scoreThreshold > 2000)
         {
             Quest3.SetActive(true);
         }
-        if (scoreThreshold > 25)
+        if (scoreThreshold > 25000)
         {
             Quest4.SetActive(true);
         }
