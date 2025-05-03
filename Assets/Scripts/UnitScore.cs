@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class UnitScore : MonoBehaviour
 {
@@ -7,32 +6,30 @@ public class UnitScore : MonoBehaviour
 
     public ScoreDisplay scoreDisplay;
 
-    public PurchaseManager purchaseManager;
+    public UnitDisplay unitDisplay;
 
     private float unitScoreContribution;
 
     [SerializeField] private bool purchased;
+
+    private int unitCount = 0;
+
+    private float localPrice;
+
+    private float priceEscalationRate = 1.15f;
 
     private int delay = 50;
     private int timer = 0;
 
     private void Start()
     {
+        localPrice = unit.price;
+
         unitScoreContribution = unit.damagePerSecond;
 
         scoreDisplay = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreDisplay>();
-        if (scoreDisplay != null)
-        {
-            Debug.Log("ScoreDisplay successfully connected to UnitScore.");
-        }
+        if (scoreDisplay != null) { Debug.Log("ScoreDisplay successfully connected to UnitScore.");}
         else { Debug.Log("ScoreDisplay failed to connect to UnitScore"); }
-
-        purchaseManager = GameObject.FindGameObjectWithTag("PurchaseManager").GetComponent<PurchaseManager>();
-        if (purchaseManager != null)
-        {
-            Debug.Log("PurchaseManager successfully connected to UnitScore.");
-        }
-        else { Debug.Log("PurchaseManager failed to connect to UnitScore"); }
     }
 
     void FixedUpdate()
@@ -42,7 +39,8 @@ public class UnitScore : MonoBehaviour
         {
             if (purchased) 
             { 
-                scoreDisplay.UpdateScore(unitScoreContribution); Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
+                scoreDisplay.UpdateScore(unitScoreContribution * unitCount); 
+                Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
             } 
             timer = 0; 
         }
@@ -63,13 +61,24 @@ public class UnitScore : MonoBehaviour
     {
         if (!purchased)
         {
-            if (CanPlayerAffordThis(unit.price))
+            if (CanPlayerAffordThis(localPrice))
             {
                 { purchased = true; }
+                unitCount++;
+                localPrice *= priceEscalationRate;
+                unitDisplay.priceText.text = localPrice.ToString("F2");
+                unitDisplay.levelOfUnit.text = unitCount.ToString();
             }
         }
-            
-    }
-
-
+        if (unitCount > 0) 
+        {
+            if (CanPlayerAffordThis(localPrice))
+            {
+                unitCount++;
+                localPrice *= priceEscalationRate;
+                unitDisplay.priceText.text = localPrice.ToString("F2");
+                unitDisplay.levelOfUnit.text = unitCount.ToString();
+            }
+        }
+    } 
 }

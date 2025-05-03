@@ -1144,4 +1144,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit: {fileID: 11400000, guid: 14b01d925bac1884ebb322cd7e864875, type: 2}
   scoreDisplay: {fileID: 0}
+  unitDisplay: {fileID: 1744875463331535543}
   purchased: 0

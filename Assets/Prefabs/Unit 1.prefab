@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit: {fileID: 11400000, guid: 32333d3b4f02d854bb3d9f28f88561d6, type: 2}
   scoreDisplay: {fileID: 0}
+  unitDisplay: {fileID: 8510557411524630415}
   purchased: 0
 --- !u!1 &3480962944267004776
 GameObject:
