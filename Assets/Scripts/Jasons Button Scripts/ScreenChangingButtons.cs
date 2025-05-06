@@ -81,7 +81,7 @@ public class ScreenChangingButtons : MonoBehaviour
     {
         LastScreenActive = GetCurrentActiveScreen();
 
-        SetScreen(Options);
+        SetScreen(Credits);
 
         Time.timeScale = 0;
     }
