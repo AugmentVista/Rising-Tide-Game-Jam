@@ -23,6 +23,21 @@ public class ScreenChangingButtons : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && Gameplay.activeSelf)
+        {
+            Debug.Log("Pause");
+            SetScreen(Pause);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Escape) && Pause.activeSelf)
+        {
+            SetScreen(Gameplay);
+            Debug.Log("Continue");
+        }
+    }
+
     public void SetUIFalse()
     {
         Options.gameObject.SetActive(false);
