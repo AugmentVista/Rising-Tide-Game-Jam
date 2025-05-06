@@ -23,9 +23,4 @@ public class OptionButtons : MonoBehaviour
 
         MusicVolume.onValueChanged.AddListener((v) => { MusicSounds.volume = v; });
     }
-
-    public void PixaBayCardoard()
-    {
-        Application.OpenURL("https://pixabay.com/photos/parcel-post-deliver-moving-4967721/");
-    }
 }

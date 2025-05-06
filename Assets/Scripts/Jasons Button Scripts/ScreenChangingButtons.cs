@@ -120,4 +120,11 @@ public class ScreenChangingButtons : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void BResume()
+    {
+        SetScreen(Gameplay);
+
+        Time.timeScale = 1;
+    }
 }
