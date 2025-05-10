@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 165111247, guid: 7d3edd2c885680942b21e3dbe625aa75, type: 3}
+  m_Sprite: {fileID: 1844048652, guid: f0f2b2cecc99e2b4b893c4181ca7b405, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 969107638, guid: 7d3edd2c885680942b21e3dbe625aa75, type: 3}
+  m_Sprite: {fileID: 880053137, guid: f0f2b2cecc99e2b4b893c4181ca7b405, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5046,7 +5046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 416598752, guid: 7d3edd2c885680942b21e3dbe625aa75, type: 3}
+  m_Sprite: {fileID: 557070429, guid: f0f2b2cecc99e2b4b893c4181ca7b405, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5418,7 +5418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2000739581, guid: 7d3edd2c885680942b21e3dbe625aa75, type: 3}
+  m_Sprite: {fileID: 1753190203, guid: f0f2b2cecc99e2b4b893c4181ca7b405, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9678,11 +9678,11 @@ MonoBehaviour:
   MusicVolume: {fileID: 1553101894}
   GameplaySounds: {fileID: 378892931}
   MusicSounds: {fileID: 1732113935}
-  AncorTexture: {fileID: 2800000, guid: ef230d66a48fbc74294035f31937c3e7, type: 3}
+  AncorTexture: {fileID: 2800000, guid: 7f521201702621c4588deb96593e3d12, type: 3}
   WheelTexture: {fileID: 2800000, guid: fe763e5462ac7c140802afe3506f6598, type: 3}
   HatTexture: {fileID: 2800000, guid: bb9a954f0984e544b979da359b7683b2, type: 3}
   DuckTexture: {fileID: 2800000, guid: 85b612de1463946439fe72227eff58b6, type: 3}
-  BoatTexture: {fileID: 2800000, guid: af2ebef5c88ac0b44a444c25a11c8cc9, type: 3}
+  BoatTexture: {fileID: 2800000, guid: 709a7bb46556e494b9bce02c60c613ee, type: 3}
   ClickLocation:
   - {x: 0.5, y: 0.2}
   - {x: 0.5, y: 0.5}
@@ -9833,7 +9833,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1177297549, guid: 7d3edd2c885680942b21e3dbe625aa75, type: 3}
+  m_Sprite: {fileID: 426665596, guid: f0f2b2cecc99e2b4b893c4181ca7b405, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
