@@ -16,6 +16,6 @@ MonoBehaviour:
   levelOfUnit: 0
   hireText: Hire
   price: 500
-  unitImage: {fileID: 21300000, guid: 48a0a40cd0cf77744b7956c3683c5b0c, type: 3}
+  unitImage: {fileID: 21300000, guid: 90a8111192ca9a94ea70e6450825b162, type: 3}
   damagePerSecond: 999999
   infoPanel: {fileID: 0}
