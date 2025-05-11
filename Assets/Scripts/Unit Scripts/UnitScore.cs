@@ -41,7 +41,7 @@ public class UnitScore : MonoBehaviour
             { 
                 scoreDisplay.UpdateScore(unitScoreContribution * unitCount);
                 float totalDPS = unitScoreContribution * unitCount;
-                unitDisplay.damagePerSecond.text = totalDPS.ToString() + " Total dps";
+                unitDisplay.damagePerSecond.text = totalDPS.ToString() + "duckpower per second";
                 Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
             }
             timer = 0; 
