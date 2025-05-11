@@ -20,6 +20,7 @@ public class UnitScore : MonoBehaviour
 
     private int delay = 50;
     private int timer = 0;
+    float totalDPS = 0;
 
     private void Start()
     {
@@ -32,6 +33,10 @@ public class UnitScore : MonoBehaviour
         else { Debug.Log("ScoreDisplay failed to connect to UnitScore"); }
     }
 
+    private void Update()
+    {
+        unitDisplay.damagePerSecond.text = "Duckpower: " + totalDPS.ToString();
+    }
     void FixedUpdate()
     {
         timer++;
@@ -40,8 +45,7 @@ public class UnitScore : MonoBehaviour
             if (purchased) 
             { 
                 scoreDisplay.UpdateScore(unitScoreContribution * unitCount);
-                float totalDPS = unitScoreContribution * unitCount;
-                unitDisplay.damagePerSecond.text = totalDPS.ToString() + "duckpower per second";
+                totalDPS = unitScoreContribution * unitCount;
                 Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
             }
             timer = 0; 
