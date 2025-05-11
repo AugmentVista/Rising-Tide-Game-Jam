@@ -17,5 +17,5 @@ MonoBehaviour:
   hireText: Hire
   price: 100
   unitImage: {fileID: 21300000, guid: e4d150aac51d9bb40ac91379262e0ab5, type: 3}
-  damagePerSecond: 3500
+  damagePerSecond: 25
   infoPanel: {fileID: 0}

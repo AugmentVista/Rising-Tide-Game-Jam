@@ -18,12 +18,15 @@ public class UnitScore : MonoBehaviour
 
     private float priceEscalationRate = 1.15f;
 
-    private int delay = 50;
+    private int delay = 5;
+    private float delayConpensation;
     private int timer = 0;
     float totalDPS = 0;
 
     private void Start()
     {
+        delayConpensation = 50 / delay;
+
         localPrice = unit.price;
 
         unitScoreContribution = unit.damagePerSecond;
@@ -44,7 +47,7 @@ public class UnitScore : MonoBehaviour
         {
             if (purchased) 
             { 
-                scoreDisplay.UpdateScore(unitScoreContribution * unitCount);
+                scoreDisplay.UpdateScore(unitScoreContribution / 5 * unitCount);
                 totalDPS = unitScoreContribution * unitCount;
                 Debug.Log($"UnitScore is calling UpdateScore on {scoreDisplay.gameObject.name}"); 
             }
