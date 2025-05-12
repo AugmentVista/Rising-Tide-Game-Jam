@@ -11,7 +11,7 @@ public class WaterFillProgress : MonoBehaviour
     public TextMeshProUGUI waveCount;
 
     private int waveCountInt = 0;
-    private float threshold = 10000f;
+    private float threshold = 100f;
     private List<string> shipNames = new List<string>();
 
     void Start()

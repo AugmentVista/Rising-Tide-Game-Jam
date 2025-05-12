@@ -20,7 +20,7 @@ public class ScoreDisplay : MonoBehaviour
         score += scoreToAdd;
         Debug.Log($"Clickerscore is {scoreToAdd}");
 
-        scoreText.text = $"John Smith's {shipName} Score: {score:F2}";
+        scoreText.text = $"{shipName} Score: {score:F2}";
         publicScore = score;
     }
 
