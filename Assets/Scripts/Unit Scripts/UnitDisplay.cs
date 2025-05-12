@@ -33,7 +33,7 @@ public class UnitDisplay : MonoBehaviour
 
         priceText.text = unit.price.ToString();
 
-        damagePerSecond.text = unit.damagePerSecond.ToString() + " damage per second";
+        damagePerSecond.text = unit.damagePerSecond.ToString() + " Duckpower";
 
         infoPanel = unit.infoPanel;
     }
