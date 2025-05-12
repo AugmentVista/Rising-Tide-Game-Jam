@@ -133,7 +133,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Image
+  m_Name: Boats Animations
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend
@@ -230,7 +230,7 @@ AnimatorStateMachine:
     m_Position: {x: 370, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1388534250663622768}
-    m_Position: {x: 405, y: 315, z: 0}
+    m_Position: {x: 400, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6492341052296317233}
     m_Position: {x: 440, y: 380, z: 0}
