@@ -10,4 +10,9 @@ public class CreditsButtons : MonoBehaviour
     {
         Application.OpenURL("https://pixabay.com/photos/parcel-post-deliver-moving-4967721/");
     }
+
+    public void PixaBayBackgroundMusic()
+    {
+        Application.OpenURL("https://pixabay.com/music/video-games-game-music-teste-204327/");
+    }
 }
