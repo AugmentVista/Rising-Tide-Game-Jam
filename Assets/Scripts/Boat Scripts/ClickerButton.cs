@@ -5,6 +5,10 @@ public class ClickerButton : MonoBehaviour
     public ScoreDisplay scoreDisplay;
     public WaterFillProgress waterFillProgress;
 
+    internal int WaterIncreaseAmmount = 1; // made this so the Clciker upgrade script can change the clickers value.
+
+    internal float ScoreIncrease = 0; // This is so the score can also be increased along with Wave hight.
+
     private float score = 1;
 
     private void Start()
@@ -22,7 +26,7 @@ public class ClickerButton : MonoBehaviour
     {
         Debug.Log($"ClickerButton is calling UpdateScore on {scoreDisplay.gameObject.name}");
 
-        scoreDisplay.UpdateScore(score);
-        waterFillProgress.FillWater(1);
+        scoreDisplay.UpdateScore(score + ScoreIncrease);
+        waterFillProgress.FillWater(WaterIncreaseAmmount);
     }
 }
