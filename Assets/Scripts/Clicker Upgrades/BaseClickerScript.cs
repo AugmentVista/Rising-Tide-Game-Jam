@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BaseClickerScript : MonoBehaviour
 {
-    ScoreDisplay scoreDisplay;
-    ClickerButton clickerButton;
+    public ScoreDisplay scoreDisplay;
+    public ClickerButton clickerButton;
 
     public float Cost;
 
@@ -40,7 +40,7 @@ public class BaseClickerScript : MonoBehaviour
         else if (CanAfford())
         {
             scoreDisplay.UpdateScore(-Cost);
-            clickerButton.WaterIncreaseAmount += ClickIncrease;
+            clickerButton.WaterIncreaseAmmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
         }
     }

@@ -12,7 +12,7 @@ public class WaterFillProgress : MonoBehaviour
     public Animator boatAnimator;
 
     private int waveCountInt = 0;
-    private float threshold = 30f;
+    private float threshold = 5f;
     private int clickCount = 0;
 
     private int delay = 5000;
