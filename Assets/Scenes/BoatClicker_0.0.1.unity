@@ -12774,9 +12774,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: b7ecbc5b550812d4ba49c386cc23ac48, type: 3}
+  - {fileID: 8300000, guid: ca221df64db858d43b7d85bd1d5e471b, type: 3}
+  - {fileID: 8300000, guid: 28f78147a01693d429f81f307c83e887, type: 3}
+  - {fileID: 8300000, guid: c2da79a285bee03408b0a9af7940ffbd, type: 3}
+  - {fileID: 8300000, guid: ea4468559060b3840bcf4553559a02dd, type: 3}
   SaraSound: {fileID: 8300000, guid: 79079da54dcd2ac4393e0516803f6568, type: 3}
   GameplaySounds: {fileID: 378892931}
 --- !u!114 &1810337019
@@ -14810,7 +14812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: -187.14899}
+  m_AnchoredPosition: {x: -179, y: -187.14905}
   m_SizeDelta: {x: 900, y: 1024.298}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &4112735096033622835
@@ -15164,7 +15166,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228824835235942786}
   m_HandleRect: {fileID: 2229662863181834493}
   m_Direction: 2
-  m_Value: 0.99999994
+  m_Value: 1.0000001
   m_Size: 0.0097627845
   m_NumberOfSteps: 0
   m_OnValueChanged:
