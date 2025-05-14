@@ -8315,7 +8315,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lead Programmer: Silver'
+  m_text: 'Lead Programmer:
+
+    Silver Burnie'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd28d3d77f688144a15d40986677862, type: 2}
   m_sharedMaterial: {fileID: 5174705474632624327, guid: ebd28d3d77f688144a15d40986677862, type: 2}
@@ -9120,8 +9122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.599915, y: -0.0015373}
-  m_SizeDelta: {x: 695.09, y: 50}
+  m_AnchoredPosition: {x: -35.599915, y: -22.070013}
+  m_SizeDelta: {x: 650.95, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410141361
 MonoBehaviour:
@@ -12808,7 +12810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 379, y: -193}
+  m_AnchoredPosition: {x: 383, y: -193}
   m_SizeDelta: {x: -1550.08, y: -478.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958321407
@@ -12906,7 +12908,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Producer: Silver'
+  m_text: 'Producer:
+
+    Silver Burnie'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ebd28d3d77f688144a15d40986677862, type: 2}
   m_sharedMaterial: {fileID: 5174705474632624327, guid: ebd28d3d77f688144a15d40986677862, type: 2}
@@ -13836,7 +13840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -179, y: 827.149}
+  m_AnchoredPosition: {x: -179, y: -187.14899}
   m_SizeDelta: {x: 900, y: 1024.298}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &4112735096033622835
@@ -14190,7 +14194,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228824835235942786}
   m_HandleRect: {fileID: 2229662863181834493}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 0.99999994
   m_Size: 0.0097627845
   m_NumberOfSteps: 0
   m_OnValueChanged:
