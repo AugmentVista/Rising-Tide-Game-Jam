@@ -7,6 +7,7 @@ public class ButtonClickSound : MonoBehaviour
     [Header("Click Sounds & Source")]
     public List<AudioClip> audioClips;
     public AudioClip SaraSound;
+    public List<AudioClip> Boatclick;
     public AudioSource GameplaySounds;
 
     public void BOnClick()
@@ -29,5 +30,12 @@ public class ButtonClickSound : MonoBehaviour
             GameplaySounds.clip = audioClips[rnd];
             GameplaySounds.Play();
         }
+    }
+
+    public void BBoatButton()
+    {
+        int rnd = Random.Range(0, Boatclick.Count);
+        GameplaySounds.clip = Boatclick[rnd];
+        GameplaySounds.Play();
     }
 }

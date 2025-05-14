@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScreenChangingButtons : MonoBehaviour
@@ -141,5 +142,10 @@ public class ScreenChangingButtons : MonoBehaviour
         SetScreen(Gameplay);
 
         Time.timeScale = 1;
+    }
+
+    public void BReset()
+    {
+        SceneManager.LoadScene("BoatClicker_0.0.1");
     }
 }
