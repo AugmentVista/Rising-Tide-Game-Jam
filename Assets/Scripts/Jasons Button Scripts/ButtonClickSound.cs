@@ -6,13 +6,26 @@ public class ButtonClickSound : MonoBehaviour
 {
     [Header("Click Sounds & Source")]
     public List<AudioClip> audioClips;
+    public AudioClip SaraSound;
     public AudioSource GameplaySounds;
 
     public void BOnClick()
     {
         int rnd = Random.Range(0, audioClips.Count);
-        GameplaySounds.Stop();
-        GameplaySounds.clip = audioClips[rnd];
-        GameplaySounds.Play();
+        int SaraRND = Random.Range(0, 101);
+
+        if (SaraRND == 7)
+        {
+            GameplaySounds.Stop();
+            GameplaySounds.clip = audioClips[rnd];
+            GameplaySounds.Play();
+        }
+
+        else
+        {
+            GameplaySounds.Stop();
+            GameplaySounds.clip = audioClips[rnd];
+            GameplaySounds.Play();
+        }
     }
 }
