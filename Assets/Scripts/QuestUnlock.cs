@@ -34,19 +34,17 @@ public class QuestUnlock : MonoBehaviour
         {
             Quest1.SetActive(true);
         }
-        if (scoreThreshold > 100)
+        if (scoreThreshold > 200)
         {
             Quest2.SetActive(true);
         }
-        if (scoreThreshold > 200)
+        if (scoreThreshold > 1000)
         {
             Quest3.SetActive(true);
         }
-        if (scoreThreshold > 300)
+        if (scoreThreshold > 5000)
         {
             Quest4.SetActive(true);
         }
     }
-
-
 }

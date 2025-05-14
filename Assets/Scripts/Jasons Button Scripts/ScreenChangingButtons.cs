@@ -42,7 +42,6 @@ public class ScreenChangingButtons : MonoBehaviour
     {
         Options.gameObject.SetActive(false);
         Menu.gameObject.SetActive(false);
-        //Gameplay.gameObject.SetActive(false);
         Pause.gameObject.SetActive(false);
         Credits.gameObject.SetActive(false);
     }

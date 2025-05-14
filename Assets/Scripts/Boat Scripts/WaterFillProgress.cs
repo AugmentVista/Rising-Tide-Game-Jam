@@ -102,7 +102,7 @@ public class WaterFillProgress : MonoBehaviour
         {
             waveCountInt++;
             waveCount.text = "Wave " + waveCountInt.ToString();
-            threshold *= 3;
+            threshold *= 5; // this could be a difficulty setting
             waterImage.fillAmount = 0.0f;
             clickCount = 0;
             addBlend += 0.25f;
