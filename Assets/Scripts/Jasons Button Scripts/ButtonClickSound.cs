@@ -15,8 +15,6 @@ public class ButtonClickSound : MonoBehaviour
         int rnd = Random.Range(0, audioClips.Count);
         int SaraRND = Random.Range(0, 101);
 
-        Debug.Log(SaraRND);
-
         if (SaraRND == 7)
         {
             GameplaySounds.Stop();
