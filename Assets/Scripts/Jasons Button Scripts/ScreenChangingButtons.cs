@@ -25,7 +25,7 @@ public class ScreenChangingButtons : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && Gameplay.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Escape) && !Pause.activeSelf)
         {
             Debug.Log("Pause");
             SetScreen(Pause);
@@ -42,7 +42,7 @@ public class ScreenChangingButtons : MonoBehaviour
     {
         Options.gameObject.SetActive(false);
         Menu.gameObject.SetActive(false);
-        Gameplay.gameObject.SetActive(false);
+        //Gameplay.gameObject.SetActive(false);
         Pause.gameObject.SetActive(false);
         Credits.gameObject.SetActive(false);
     }
