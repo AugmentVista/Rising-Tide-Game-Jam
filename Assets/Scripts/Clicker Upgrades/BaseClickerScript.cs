@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BaseClickerScript : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class BaseClickerScript : MonoBehaviour
         }
         else if (CanAfford())
         {
-            scoreDisplay.publicScore -= Cost;
+            scoreDisplay.UpdateScore(-Cost);
             clickerButton.WaterIncreaseAmmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
         }
