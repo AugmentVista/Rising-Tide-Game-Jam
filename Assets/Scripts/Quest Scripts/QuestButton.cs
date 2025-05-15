@@ -36,7 +36,7 @@ public class QuestButton : MonoBehaviour
         }
         else
         {
-            questText.text = $"{rewardName}\n{rewardDescription}{baseClickerScript.ClickIncrease}: \n{rewardPrice}{baseClickerScript.Cost}";
+            questText.text = $"{rewardName}\n{rewardDescription}{baseClickerScript.ClickIncrease} \n{rewardPrice}{baseClickerScript.Cost}";
         }
     }
 }
