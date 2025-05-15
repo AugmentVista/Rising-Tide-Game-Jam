@@ -11,7 +11,7 @@ public class WaterFillProgress : MonoBehaviour
     public TextMeshProUGUI waveCount;
     public Animator boatAnimator;
 
-    private int waveCountInt = 0;
+    private int waveCountInt = 1;
     private float threshold = 20f;
     private float clickCount = 0;
 
@@ -32,7 +32,8 @@ public class WaterFillProgress : MonoBehaviour
         shipNames.Add("Lawnchair");
         shipNames.Add("The half-boat");
         shipNames.Add("Pet Rock");
-        scoreDisplay.shipName = shipNames[waveCountInt].ToString();
+        scoreDisplay.shipName = shipNames[waveCountInt -1].ToString();
+        waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
     }
 
     /// <summary>
@@ -101,13 +102,13 @@ public class WaterFillProgress : MonoBehaviour
         if (waterImage.fillAmount >= 1.0f)
         {
             waveCountInt++;
-            waveCount.text = "Wave " + waveCountInt.ToString();
+            waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
             threshold *= 5; // this could be a difficulty setting
             waterImage.fillAmount = 0.0f;
             clickCount = 0;
             addBlend += 0.25f;
             boatAnimator.SetFloat("Blend", addBlend);
-            scoreDisplay.shipName = shipNames[waveCountInt].ToString();
+            scoreDisplay.shipName = shipNames[waveCountInt -1].ToString();
             ChangeWeight();
         }
     }
