@@ -32,7 +32,7 @@ public class QuestButton : MonoBehaviour
 
         if (locked)
         {
-            questText.text = $"Unlock: {lockedText}";
+            questText.text = $"{lockedText} to Unlock ";
         }
         else
         {

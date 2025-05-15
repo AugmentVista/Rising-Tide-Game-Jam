@@ -379,9 +379,9 @@ MonoBehaviour:
   backgroundImage: {fileID: 8106146819858609495}
   questText: {fileID: 783786723807135644}
   rewardIcon: {fileID: 8963602262790536438}
-  unlockScore: 20
+  unlockScore: 50
   baseClickerScript: {fileID: 3326369697718606178}
-  lockedText: Reach 20 score
+  lockedText: Reach 50 score
   rewardDescription: Click strength +
   rewardName: Upgrade Click Power
   isUnlocked: 0

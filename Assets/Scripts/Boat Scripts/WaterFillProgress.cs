@@ -18,6 +18,7 @@ public class WaterFillProgress : MonoBehaviour
     private int delay = 100; // fixed update counts to 100 every 2 seconds
     private int timer = 0;
     private float addBlend = 0.0f;
+    private float waterDrainAmount = 2f;
 
     public float weight = 1;
 
@@ -68,27 +69,38 @@ public class WaterFillProgress : MonoBehaviour
     {
         if (scoreDisplay.shipName == ("The Classic"))
         {
-            weight = threshold/ 20;
+            threshold = 20f;
+
+            delay = 100; // 2 seconds
+            weight = waterDrainAmount; // 1 per second
         }
         else if (scoreDisplay.shipName == ("Sad cat"))
         {
-            delay = 80;
-            weight = threshold / 20;
+            threshold = 100f;
+
+            delay = 100; // 2 seconds
+            weight = 2 * waterDrainAmount; // 2 per second
         }
         else if (scoreDisplay.shipName == ("Lawnchair"))
         {
-            delay = 60;
-            weight = threshold / 20;
+            threshold = 250f;
+
+            delay = 50; // 1 second
+            weight = 3 * waterDrainAmount; // 6 per second
         }
         else if (scoreDisplay.shipName == ("The half-boat"))
         {
-            delay = 50;
-            weight = threshold / 20;
+            threshold = 500f;
+
+            delay = 50; // 1 second 
+            weight = 5 * waterDrainAmount; // 10 per second
         }
         else if (scoreDisplay.shipName == ("Pet Rock"))
         {
-            delay = 25;
-            weight = threshold / 20;
+            threshold = 1000f;
+
+            delay = 25; // 0.5 seconds
+            weight = 5 * waterDrainAmount; // 20 per second
         }
 
     }
@@ -103,13 +115,12 @@ public class WaterFillProgress : MonoBehaviour
         {
             waveCountInt++;
             waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
-            threshold *= 5; // this could be a difficulty setting
+            ChangeWeight();
             waterImage.fillAmount = 0.0f;
             clickCount = 0;
             addBlend += 0.25f;
             boatAnimator.SetFloat("Blend", addBlend);
             scoreDisplay.shipName = shipNames[waveCountInt -1].ToString();
-            ChangeWeight();
         }
     }
 }
