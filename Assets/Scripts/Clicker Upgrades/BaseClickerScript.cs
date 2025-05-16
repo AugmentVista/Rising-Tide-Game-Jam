@@ -7,6 +7,7 @@ public class BaseClickerScript : MonoBehaviour
 {
     public ScoreDisplay scoreDisplay;
     public ClickerButton clickerButton;
+    public GameObject questParent;
 
     public float Cost;
 
@@ -38,12 +39,12 @@ public class BaseClickerScript : MonoBehaviour
         {
             return;
         }
-        else if (CanAfford() && !purchased)
+        else if (CanAfford())
         {
             scoreDisplay.UpdateScore(-Cost);
             clickerButton.WaterIncreaseAmmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
-            purchased = true;
+            questParent.SetActive(false);
         }
     }
 }

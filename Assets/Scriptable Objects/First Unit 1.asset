@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9015c87ea417704eb885e47b17d1220, type: 3}
-  m_Name: Second Unit
+  m_Name: First Unit 1
   m_EditorClassIdentifier: 
-  nameOfUnit: QuackMallard
+  nameOfUnit: Bill
   levelOfUnit: 0
   hireText: Hire
-  price: 1000
-  unitImage: {fileID: 21300000, guid: e4d150aac51d9bb40ac91379262e0ab5, type: 3}
-  damagePerSecond: 40
+  price: 100
+  unitImage: {fileID: 21300000, guid: 175911b8cf6888b4ca0fc9d224109bc5, type: 3}
+  damagePerSecond: 10
   infoPanel: {fileID: 0}

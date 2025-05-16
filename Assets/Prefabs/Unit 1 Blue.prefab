@@ -987,7 +987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd236d71f7732084dab2fa027944e101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit: {fileID: 11400000, guid: 32333d3b4f02d854bb3d9f28f88561d6, type: 2}
+  unit: {fileID: 11400000, guid: 9148eaabfb6a4bc40bfa48a76a0cfbea, type: 2}
   scoreDisplay: {fileID: 0}
   unitDisplay: {fileID: 3127792376855429191}
   purchased: 0
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b266df110bc2ac4b8bd5667f3ef79f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit: {fileID: 11400000, guid: 32333d3b4f02d854bb3d9f28f88561d6, type: 2}
+  unit: {fileID: 11400000, guid: 9148eaabfb6a4bc40bfa48a76a0cfbea, type: 2}
   nameOfUnit: {fileID: 6318859838347943024}
   levelOfUnit: {fileID: 6198667836478577223}
   unitSprite: {fileID: 8340857764927518974}
@@ -1084,8 +1084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 205, y: 42.5}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 142.5, y: 42.5}
+  m_SizeDelta: {x: 175, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4432915884844247824
 CanvasRenderer:
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

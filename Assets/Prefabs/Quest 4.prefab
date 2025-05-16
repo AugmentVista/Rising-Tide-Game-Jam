@@ -283,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 0}
   clickerButton: {fileID: 0}
+  questParent: {fileID: 7762642794519865310}
   Cost: 12500
   ClickIncrease: 15
 --- !u!1 &7762642794519865310

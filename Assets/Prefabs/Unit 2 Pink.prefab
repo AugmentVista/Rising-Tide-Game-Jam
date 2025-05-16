@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd236d71f7732084dab2fa027944e101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit: {fileID: 11400000, guid: 14b01d925bac1884ebb322cd7e864875, type: 2}
+  unit: {fileID: 11400000, guid: 94738645150a8dc4b8259528c094349a, type: 2}
   scoreDisplay: {fileID: 0}
   unitDisplay: {fileID: 3206377984511154224}
   purchased: 0
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b266df110bc2ac4b8bd5667f3ef79f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit: {fileID: 11400000, guid: 14b01d925bac1884ebb322cd7e864875, type: 2}
+  unit: {fileID: 11400000, guid: 94738645150a8dc4b8259528c094349a, type: 2}
   nameOfUnit: {fileID: 8425753165567997559}
   levelOfUnit: {fileID: 4831157152132498241}
   unitSprite: {fileID: 6861535713726223102}
