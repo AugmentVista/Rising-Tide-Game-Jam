@@ -7,10 +7,12 @@ public class BaseClickerScript : MonoBehaviour
 {
     public ScoreDisplay scoreDisplay;
     public ClickerButton clickerButton;
+    public GameObject questParent;
 
     public float Cost;
 
     public int ClickIncrease;
+    bool purchased = false;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,7 @@ public class BaseClickerScript : MonoBehaviour
             scoreDisplay.UpdateScore(-Cost);
             clickerButton.WaterIncreaseAmmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
+            questParent.SetActive(false);
         }
     }
 }
