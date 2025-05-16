@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9015c87ea417704eb885e47b17d1220, type: 3}
   m_Name: Second Unit 2
   m_EditorClassIdentifier: 
-  nameOfUnit: Sir Quackington
+  nameOfUnit: Ducktopus
   levelOfUnit: 0
   hireText: Hire
   price: 5000
