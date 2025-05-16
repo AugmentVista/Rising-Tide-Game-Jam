@@ -10785,7 +10785,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2229662863181834493}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.013114926
+  m_Size: 0.013114925
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11016,7 +11016,7 @@ PrefabInstance:
     - target: {fileID: 176257788726650648, guid: bc58a8082d7a9a54aa8eb7ced9a91517, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bd5c8efec051d87418db56773f417841, type: 3}
+      objectReference: {fileID: 21300000, guid: a482b62b29706194ebf1f48ae0e0cb15, type: 3}
     - target: {fileID: 3552488972323948600, guid: bc58a8082d7a9a54aa8eb7ced9a91517, type: 3}
       propertyPath: m_Name
       value: Quest 3
@@ -11886,7 +11886,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1459628420161374432}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.006060606
+  m_Size: 0.0060606054
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
