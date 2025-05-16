@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScreenChangingButtons : MonoBehaviour
@@ -11,6 +12,7 @@ public class ScreenChangingButtons : MonoBehaviour
     public GameObject Gameplay;
     public GameObject Pause;
     public GameObject Credits;
+    public GameObject Confirmation;
 
     private GameObject LastScreenActive;
 
@@ -44,6 +46,7 @@ public class ScreenChangingButtons : MonoBehaviour
         Menu.gameObject.SetActive(false);
         Pause.gameObject.SetActive(false);
         Credits.gameObject.SetActive(false);
+        Confirmation.gameObject.SetActive(false);
     }
 
     private GameObject GetCurrentActiveScreen()
@@ -141,4 +144,19 @@ public class ScreenChangingButtons : MonoBehaviour
 
         Time.timeScale = 1;
     }
+    public void BReset()
+    {
+        Confirmation.SetActive(true);
+    }
+
+    public void BYesReset()
+    {
+        SceneManager.LoadScene("BoatClicker_0.0.1");
+    }
+
+    public void BNoReset()
+    {
+        Confirmation.SetActive(false);
+    }
+
 }

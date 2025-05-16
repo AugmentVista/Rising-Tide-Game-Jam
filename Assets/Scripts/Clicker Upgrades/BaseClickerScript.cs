@@ -11,6 +11,7 @@ public class BaseClickerScript : MonoBehaviour
     public float Cost;
 
     public int ClickIncrease;
+    bool purchased = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +38,12 @@ public class BaseClickerScript : MonoBehaviour
         {
             return;
         }
-        else if (CanAfford())
+        else if (CanAfford() && !purchased)
         {
             scoreDisplay.UpdateScore(-Cost);
             clickerButton.WaterIncreaseAmmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
+            purchased = true;
         }
     }
 }
