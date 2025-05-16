@@ -114,7 +114,8 @@ public class WaterFillProgress : MonoBehaviour
         if (waterImage.fillAmount >= 1.0f)
         {
             waveCountInt++;
-            waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
+            if (waveCountInt > 5) { waveCount.text = "All boats have risen"; }
+            else { waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString(); }
             ChangeWeight();
             waterImage.fillAmount = 0.0f;
             clickCount = 0;
