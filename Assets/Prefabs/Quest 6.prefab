@@ -284,8 +284,8 @@ MonoBehaviour:
   scoreDisplay: {fileID: 0}
   clickerButton: {fileID: 0}
   questParent: {fileID: 7615022041982316764}
-  Cost: 100000
-  ClickIncrease: 15
+  Cost: 1000000
+  ClickIncrease: 24
 --- !u!1 &7615022041982316764
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,9 +380,9 @@ MonoBehaviour:
   backgroundImage: {fileID: 3904220794263110404}
   questText: {fileID: 2477806941016227029}
   rewardIcon: {fileID: 8176345838698140052}
-  unlockScore: 100000
+  unlockScore: 1000000
   baseClickerScript: {fileID: 2189789879128245282}
-  lockedText: Reach 100,000 score
+  lockedText: Reach 1,000,000 score
   rewardDescription: 'Click strength: +'
   rewardName: Upgrade Click Power
   isUnlocked: 0

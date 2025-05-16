@@ -149,7 +149,7 @@ MonoBehaviour:
   clickerButton: {fileID: 0}
   questParent: {fileID: 4856352988175795857}
   Cost: 50000
-  ClickIncrease: 25
+  ClickIncrease: 18
 --- !u!1 &4856352988175795857
 GameObject:
   m_ObjectHideFlags: 0

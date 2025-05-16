@@ -12,7 +12,7 @@ public class WaterFillProgress : MonoBehaviour
     public Animator boatAnimator;
 
     private int waveCountInt = 1;
-    private float threshold = 20f;
+    private float threshold = 50;
     private float clickCount = 0;
 
     private int delay = 100; // fixed update counts to 100 every 2 seconds
@@ -83,24 +83,24 @@ public class WaterFillProgress : MonoBehaviour
         }
         else if (scoreDisplay.shipName == ("Lawnchair"))
         {
-            threshold = 500f;
+            threshold = 800f;
 
             delay = 50; // 1 second
             weight = 3 * waterDrainAmount; // 6 per second
         }
         else if (scoreDisplay.shipName == ("The half-boat"))
         {
-            threshold = 1000f;
+            threshold = 2000f;
 
             delay = 50; // 1 second 
-            weight = 5 * waterDrainAmount; // 10 per second
+            weight = 10 * waterDrainAmount; // 20 per second
         }
         else if (scoreDisplay.shipName == ("Pet Rock"))
         {
-            threshold = 2500f;
+            threshold = 5000f;
 
             delay = 25; // 0.5 seconds
-            weight = 5 * waterDrainAmount; // 20 per second
+            weight = 10 * waterDrainAmount; // 40 per second
         }
 
     }
@@ -116,12 +116,12 @@ public class WaterFillProgress : MonoBehaviour
             waveCountInt++;
             if (waveCountInt > 5) { waveCount.text = "All boats have risen"; }
             else { waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString(); }
-            ChangeWeight();
             waterImage.fillAmount = 0.0f;
             clickCount = 0;
             addBlend += 0.25f;
             boatAnimator.SetFloat("Blend", addBlend);
             scoreDisplay.shipName = shipNames[waveCountInt -1].ToString();
+            ChangeWeight();
         }
     }
 }

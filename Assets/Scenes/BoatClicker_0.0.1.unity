@@ -10506,6 +10506,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3730246002720064681}
     m_Modifications:
+    - target: {fileID: 5489722955525759709, guid: b32523952b2eece449056b4c94cfbc81, type: 3}
+      propertyPath: ClickIncrease
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6569877932608949964, guid: b32523952b2eece449056b4c94cfbc81, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11036,6 +11040,10 @@ PrefabInstance:
     - target: {fileID: 4903961243108248237, guid: bc58a8082d7a9a54aa8eb7ced9a91517, type: 3}
       propertyPath: unlockScore
       value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543237710510628545, guid: bc58a8082d7a9a54aa8eb7ced9a91517, type: 3}
+      propertyPath: ClickIncrease
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9162688636288662671, guid: bc58a8082d7a9a54aa8eb7ced9a91517, type: 3}
       propertyPath: m_Pivot.x
@@ -11577,6 +11585,10 @@ PrefabInstance:
     - target: {fileID: 2189789879128245282, guid: 64cb2c04298fc0841a9db95e92269be9, type: 3}
       propertyPath: Cost
       value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189789879128245282, guid: 64cb2c04298fc0841a9db95e92269be9, type: 3}
+      propertyPath: ClickIncrease
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6608916871135180261, guid: 64cb2c04298fc0841a9db95e92269be9, type: 3}
       propertyPath: m_Name
@@ -12346,7 +12358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5411947463073171276, guid: ceee5475736b3b94a9eedf69329eec86, type: 3}
       propertyPath: ClickIncrease
-      value: 8
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
