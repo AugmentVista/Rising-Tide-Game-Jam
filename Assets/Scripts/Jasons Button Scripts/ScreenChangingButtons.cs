@@ -27,7 +27,7 @@ public class ScreenChangingButtons : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !Pause.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Escape) && !Pause.activeSelf && !Menu.activeSelf && !Credits.activeSelf && !Confirmation.activeSelf && !Options.activeSelf)
         {
             Debug.Log("Pause");
             SetScreen(Pause);
