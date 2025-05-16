@@ -69,35 +69,35 @@ public class WaterFillProgress : MonoBehaviour
     {
         if (scoreDisplay.shipName == ("The Classic"))
         {
-            threshold = 20f;
+            threshold = 50f;
 
             delay = 100; // 2 seconds
             weight = waterDrainAmount; // 1 per second
         }
         else if (scoreDisplay.shipName == ("Sad cat"))
         {
-            threshold = 100f;
+            threshold = 250f;
 
             delay = 100; // 2 seconds
             weight = 2 * waterDrainAmount; // 2 per second
         }
         else if (scoreDisplay.shipName == ("Lawnchair"))
         {
-            threshold = 250f;
+            threshold = 500f;
 
             delay = 50; // 1 second
             weight = 3 * waterDrainAmount; // 6 per second
         }
         else if (scoreDisplay.shipName == ("The half-boat"))
         {
-            threshold = 500f;
+            threshold = 1000f;
 
             delay = 50; // 1 second 
             weight = 5 * waterDrainAmount; // 10 per second
         }
         else if (scoreDisplay.shipName == ("Pet Rock"))
         {
-            threshold = 1000f;
+            threshold = 2500f;
 
             delay = 25; // 0.5 seconds
             weight = 5 * waterDrainAmount; // 20 per second

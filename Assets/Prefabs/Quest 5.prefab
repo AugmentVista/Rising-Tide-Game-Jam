@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &812392871975896801
+--- !u!1 &1715836650744073431
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6087981190787791265}
-  - component: {fileID: 1030913151818353898}
-  - component: {fileID: 176257788726650648}
-  - component: {fileID: 2240082594855280212}
-  - component: {fileID: 8543237710510628545}
+  - component: {fileID: 1439967009306116823}
+  - component: {fileID: 8456779781086001903}
+  - component: {fileID: 7400158534375632193}
+  - component: {fileID: 2478731298705633050}
+  - component: {fileID: 5411947463073171276}
   m_Layer: 5
-  m_Name: Clicker Upgrade 3
+  m_Name: Clicker Upgrade 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6087981190787791265
+--- !u!224 &1439967009306116823
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812392871975896801}
+  m_GameObject: {fileID: 1715836650744073431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9162688636288662671}
+  m_Father: {fileID: 5254396318598916761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 160, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1030913151818353898
+--- !u!222 &8456779781086001903
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812392871975896801}
+  m_GameObject: {fileID: 1715836650744073431}
   m_CullTransparentMesh: 1
---- !u!114 &176257788726650648
+--- !u!114 &7400158534375632193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812392871975896801}
+  m_GameObject: {fileID: 1715836650744073431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd5c8efec051d87418db56773f417841, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 368459a4404491c44954452cac93c5d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,13 +77,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2240082594855280212
+--- !u!114 &2478731298705633050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812392871975896801}
+  m_GameObject: {fileID: 1715836650744073431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -117,11 +117,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 176257788726650648}
+  m_TargetGraphic: {fileID: 7400158534375632193}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8543237710510628545}
+      - m_Target: {fileID: 5411947463073171276}
         m_TargetAssemblyTypeName: BaseClickerScript, Assembly-CSharp
         m_MethodName: BuyClickerUpgrade
         m_Mode: 1
@@ -133,13 +133,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8543237710510628545
+--- !u!114 &5411947463073171276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812392871975896801}
+  m_GameObject: {fileID: 1715836650744073431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43c933f5b42cf084ca2fccb7d869a08e, type: 3}
@@ -147,9 +147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 0}
   clickerButton: {fileID: 0}
-  Cost: 5000
-  ClickIncrease: 5
---- !u!1 &3552488972323948600
+  Cost: 50000
+  ClickIncrease: 25
+--- !u!1 &4856352988175795857
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,31 +157,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9162688636288662671}
-  - component: {fileID: 2245949948047515905}
-  - component: {fileID: 4071191496255032988}
-  - component: {fileID: 4903961243108248237}
+  - component: {fileID: 5254396318598916761}
+  - component: {fileID: 3846203361254238503}
+  - component: {fileID: 3129249852764492415}
+  - component: {fileID: 7602780758629772567}
   m_Layer: 5
-  m_Name: Quest 3
+  m_Name: Quest 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &9162688636288662671
+--- !u!224 &5254396318598916761
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552488972323948600}
+  m_GameObject: {fileID: 4856352988175795857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2836374792291361020}
-  - {fileID: 6087981190787791265}
+  - {fileID: 3479507255082108834}
+  - {fileID: 1439967009306116823}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -189,28 +189,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2245949948047515905
+--- !u!222 &3846203361254238503
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552488972323948600}
+  m_GameObject: {fileID: 4856352988175795857}
   m_CullTransparentMesh: 1
---- !u!114 &4071191496255032988
+--- !u!114 &3129249852764492415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552488972323948600}
+  m_GameObject: {fileID: 4856352988175795857}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12771447, g: 0.7735849, b: 0.5303467, a: 1}
+  m_Color: {r: 0.07929868, g: 0.6226415, b: 0.5842781, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -227,29 +227,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4903961243108248237
+--- !u!114 &7602780758629772567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3552488972323948600}
+  m_GameObject: {fileID: 4856352988175795857}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ed0b9ffd9e542b44a327b74a90ca68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeButton: {fileID: 2240082594855280212}
-  backgroundImage: {fileID: 4071191496255032988}
-  questText: {fileID: 2996788331268673298}
-  rewardIcon: {fileID: 176257788726650648}
-  unlockScore: 5000
-  baseClickerScript: {fileID: 8543237710510628545}
-  lockedText: Reach 5000 score
+  upgradeButton: {fileID: 2478731298705633050}
+  backgroundImage: {fileID: 3129249852764492415}
+  questText: {fileID: 3359158681189862947}
+  rewardIcon: {fileID: 7400158534375632193}
+  unlockScore: 50000
+  baseClickerScript: {fileID: 5411947463073171276}
+  lockedText: Reach 50,000 score
   rewardDescription: 'Click strength: +'
   rewardName: Upgrade Click Power
   isUnlocked: 0
---- !u!1 &7620476818353702720
+--- !u!1 &6251189570506863622
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,9 +257,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2836374792291361020}
-  - component: {fileID: 7763649084335155141}
-  - component: {fileID: 2996788331268673298}
+  - component: {fileID: 3479507255082108834}
+  - component: {fileID: 2305023928132763889}
+  - component: {fileID: 3359158681189862947}
   m_Layer: 5
   m_Name: Quest Text
   m_TagString: Untagged
@@ -267,40 +267,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2836374792291361020
+--- !u!224 &3479507255082108834
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620476818353702720}
+  m_GameObject: {fileID: 6251189570506863622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9162688636288662671}
+  m_Father: {fileID: 5254396318598916761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -90, y: 0}
   m_SizeDelta: {x: 322.986, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7763649084335155141
+--- !u!222 &2305023928132763889
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620476818353702720}
+  m_GameObject: {fileID: 6251189570506863622}
   m_CullTransparentMesh: 1
---- !u!114 &2996788331268673298
+--- !u!114 &3359158681189862947
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620476818353702720}
+  m_GameObject: {fileID: 6251189570506863622}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
