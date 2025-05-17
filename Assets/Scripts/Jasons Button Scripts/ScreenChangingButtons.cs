@@ -64,25 +64,25 @@ public class ScreenChangingButtons : MonoBehaviour
         if (newScreen == null)
             return;
 
-        // Save the currently active screen before switching
-        if (LastScreenActive != null && LastScreenActive != newScreen && LastScreenActive.activeSelf)
+        // Always capture the current active screen before switching
+        GameObject currentActive = GetCurrentActiveScreen();
+        if (currentActive != null && currentActive != newScreen)
         {
-            LastScreenActive = GetCurrentActiveScreen();
+            LastScreenActive = currentActive;
+
+            if (Pause.activeSelf)
+            {
+                LastScreenActive = Pause;
+            }
+            Debug.Log("Last screen is " + LastScreenActive.name);
         }
 
-        if (newScreen == Gameplay)
-        {
-            Time.timeScale = 1;
-        }
-        else
-        {
-            Time.timeScale = 0;
-        }
+        Time.timeScale = (newScreen == Gameplay) ? 1 : 0;
 
         SetUIFalse();
         newScreen.SetActive(true);
     }
-    
+
     // All Buttons start with B to make them easier to find in unity
 
     public void BStarting()
