@@ -9,9 +9,7 @@ using UnityEngine.Events;
 public class Tab_Button : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
 {
     public TabGroup tabGroup;
-
     public Image backgroundImage;
-
     public UnityEvent onTabSelected;
     public UnityEvent onTabDeselected;
 
