@@ -42,7 +42,7 @@ public class BaseClickerScript : MonoBehaviour
         else if (CanAfford())
         {
             scoreDisplay.UpdateScore(-Cost);
-            clickerButton.WaterIncreaseAmmount += ClickIncrease;
+            clickerButton.WaterIncreaseAmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
             questParent.SetActive(false);
         }
