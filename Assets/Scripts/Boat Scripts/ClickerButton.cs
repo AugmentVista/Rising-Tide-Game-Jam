@@ -3,14 +3,13 @@ using UnityEngine;
 public class ClickerButton : MonoBehaviour
 {
     public ScoreDisplay scoreDisplay;
-    public WaterFillProgress waterFillProgress;
     public Rigidbody2D rb;
 
     public float forwardBoatForce = 1f;
 
     internal int WaterIncreaseAmount = 1; // made this so the Clicker upgrade script can change the clickers value.
 
-    internal float ScoreIncrease = 0; // This is so the score can also be increased along with Wave height.
+    internal float ScoreIncrease = 0; 
 
     private float score = 1;
 
@@ -18,7 +17,6 @@ public class ClickerButton : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         scoreDisplay = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreDisplay>();
-        waterFillProgress = GameObject.FindGameObjectWithTag("Water").GetComponent<WaterFillProgress>();
         if (scoreDisplay != null)
         {
             //Debug.Log("ScoreDisplay successfully connected.");
@@ -28,12 +26,13 @@ public class ClickerButton : MonoBehaviour
 
     public void OnButtonClick()
     {
-        //Debug.Log($"ClickerButton is calling UpdateScore on {scoreDisplay.gameObject.name}");
+        scoreDisplay.tapCount += 1;
+        float tapMultiplier = scoreDisplay.GetTapMultiplier();
 
-        scoreDisplay.UpdateScore(score + ScoreIncrease);
-        //waterFillProgress.FillWater(WaterIncreaseAmount);
+        // Apply multiplier to score and force
+        float totalScoreIncrease = (score + ScoreIncrease) * tapMultiplier;
+        scoreDisplay.UpdateScore(totalScoreIncrease);
 
-        rb.AddForce(Vector2.right * forwardBoatForce, ForceMode2D.Impulse);
-
+        rb.AddForce(Vector2.right * forwardBoatForce * tapMultiplier, ForceMode2D.Impulse);
     }
 }
