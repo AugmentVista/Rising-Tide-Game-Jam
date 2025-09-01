@@ -8,6 +8,7 @@ TagManager:
   - PurchaseManager
   - Water
   - BoatButton
+  - Pirate
   layers:
   - Default
   - TransparentFX

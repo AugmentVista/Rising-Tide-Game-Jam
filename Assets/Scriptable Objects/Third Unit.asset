@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9015c87ea417704eb885e47b17d1220, type: 3}
   m_Name: Third Unit
   m_EditorClassIdentifier: 
-  nameOfUnit: Cooler Pirate
+  nameOfUnit: James Pond
   levelOfUnit: 0
   hireText: Hire
-  price: 500
+  price: 15000
   unitImage: {fileID: 21300000, guid: 90a8111192ca9a94ea70e6450825b162, type: 3}
-  damagePerSecond: 125
+  damagePerSecond: 400
   infoPanel: {fileID: 0}
