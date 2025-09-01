@@ -13,11 +13,11 @@ public class ScoreDisplay : MonoBehaviour
 
     public void UpdateScore(float scoreToAdd)
     {
-        Debug.Log($"{gameObject.name} received score update: {scoreToAdd}");
+        //Debug.Log($"{gameObject.name} received score update: {scoreToAdd}");
         score += scoreToAdd;
-        Debug.Log($"Clickerscore is {scoreToAdd}");
+        //Debug.Log($"Clickerscore is {scoreToAdd}");
 
-        scoreText.text = $"{shipName} Score: {score:F2}";
+        scoreText.text = $"{shipName} Distance: {score:F2}";
         publicScore = score;
     }
 }

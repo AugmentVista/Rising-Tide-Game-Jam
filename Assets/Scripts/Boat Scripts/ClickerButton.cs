@@ -6,9 +6,11 @@ public class ClickerButton : MonoBehaviour
     public WaterFillProgress waterFillProgress;
     public Rigidbody2D rb;
 
-    internal int WaterIncreaseAmount = 1; // made this so the Clciker upgrade script can change the clickers value.
+    public float forwardBoatForce = 1f;
 
-    internal float ScoreIncrease = 0; // This is so the score can also be increased along with Wave hight.
+    internal int WaterIncreaseAmount = 1; // made this so the Clicker upgrade script can change the clickers value.
+
+    internal float ScoreIncrease = 0; // This is so the score can also be increased along with Wave height.
 
     private float score = 1;
 
@@ -19,19 +21,19 @@ public class ClickerButton : MonoBehaviour
         waterFillProgress = GameObject.FindGameObjectWithTag("Water").GetComponent<WaterFillProgress>();
         if (scoreDisplay != null)
         {
-            Debug.Log("ScoreDisplay successfully connected.");
+            //Debug.Log("ScoreDisplay successfully connected.");
         }
         else { Debug.Log("ScoreDisplay failed to connect."); }
     }
 
     public void OnButtonClick()
     {
-        Debug.Log($"ClickerButton is calling UpdateScore on {scoreDisplay.gameObject.name}");
+        //Debug.Log($"ClickerButton is calling UpdateScore on {scoreDisplay.gameObject.name}");
 
         scoreDisplay.UpdateScore(score + ScoreIncrease);
         //waterFillProgress.FillWater(WaterIncreaseAmount);
 
-        rb.AddForce(new Vector2(3, 0.1f), ForceMode2D.Impulse);
+        rb.AddForce(Vector2.right * forwardBoatForce, ForceMode2D.Impulse);
 
     }
 }
