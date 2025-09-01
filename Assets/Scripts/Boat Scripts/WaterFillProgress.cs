@@ -32,7 +32,7 @@ public class WaterFillProgress : MonoBehaviour
         shipNames.Add("The half-boat");
         shipNames.Add("Pet Rock");
         scoreDisplay.shipName = shipNames[waveCountInt -1].ToString();
-        waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
+        //waveCount.text = "Wave " + waveCountInt.ToString() + " / " + shipNames.Count.ToString();
     }
 
    

@@ -42,9 +42,9 @@ public class BoatBaseSpeed : MonoBehaviour
         
         float averageMultiplier = totalMultiplier / pushCount;
 
-        Debug.Log($"BoatBaseSpeed: Applied multiplier {randomMultiplier:F1} | " +
-                  $"Average multiplier so far: {averageMultiplier:F2} " +
-                  $"(Total pushes: {pushCount})");
+        //Debug.Log($"BoatBaseSpeed: Applied multiplier {randomMultiplier:F1} | " +
+                  //$"Average multiplier so far: {averageMultiplier:F2} " +
+                // $"(Total pushes: {pushCount})");
     }
 
     void FixedUpdate()
