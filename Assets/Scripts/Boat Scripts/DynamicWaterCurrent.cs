@@ -5,8 +5,8 @@ public class DynamicWaterCurrent : MonoBehaviour
 {
     [Header("Base Force Settings")]
     
-    public float maxForce = 10f; // Maximum opposing force at 100% progress                    
-    public AnimationCurve forceCurve; // Controls force scaling across progress
+    public float maxForce; // Maximum opposing force at 100% progress                    
+    public AnimationCurve forceCurve; // Customizable curve to control force based on boat's rightward progress
 
     [Header("Wind Gust Settings")]
     public float gustStrength = 2f; // How strong gusts can be (+/-)
@@ -14,7 +14,7 @@ public class DynamicWaterCurrent : MonoBehaviour
     // gustSpeed = 5 == 0.2 seconds per unit == fast gusts || gustSpeed = 10 == 0.1 seconds per unit == very fast gusts
     private float gustOffset; // Unique offset for Perlin noise
 
-    private float centeredNoiseOffset = 0.5f; // To center Perlin noise around 0
+    private float centeredNoiseOffset = 0.5f; // To center Perlin noise around 0. This can be adjusted to bias wind gusts more positive or negative to increase or augment difficulty
 
     private float amplitude = 2f;
 
