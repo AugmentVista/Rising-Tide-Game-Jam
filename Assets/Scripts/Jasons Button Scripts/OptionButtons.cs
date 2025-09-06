@@ -15,6 +15,7 @@ public class OptionButtons : MonoBehaviour
     public AudioSource GameplaySounds;
     public AudioSource MusicSounds;
 
+    // Add Immage as texture 2d in inspector.
     [Header("Cursor Texture")]
     public Texture2D AncorTexture;
     public Texture2D WheelTexture;
@@ -23,7 +24,7 @@ public class OptionButtons : MonoBehaviour
     public Texture2D BoatTexture;
 
 
-    public List<Vector2> ClickLocation; // Where the cursor can interract with the world EX: Top right of Texture v.s. Center.
+    public List<Vector2> ClickLocation; // Where the cursor can interract with the world EX: Top right of Texture v.s. Center. Set in inspector
     public CursorMode cursorMode = CursorMode.Auto;
 
     // All Buttons start with B to make them easier to find in unity
