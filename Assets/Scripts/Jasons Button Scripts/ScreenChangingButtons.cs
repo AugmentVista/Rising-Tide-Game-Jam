@@ -151,7 +151,7 @@ public class ScreenChangingButtons : MonoBehaviour
 
     public void BYesReset()
     {
-        SceneManager.LoadScene("BoatClicker_0.0.1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void BNoReset()

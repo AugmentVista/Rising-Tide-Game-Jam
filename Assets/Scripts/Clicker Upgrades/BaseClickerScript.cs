@@ -13,8 +13,6 @@ public class BaseClickerScript : MonoBehaviour
 
     public int ClickIncrease;
     bool purchased = false;
-
-    // Start is called before the first frame update
     void Start()
     {
         scoreDisplay = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreDisplay>();
@@ -42,7 +40,7 @@ public class BaseClickerScript : MonoBehaviour
         else if (CanAfford())
         {
             scoreDisplay.UpdateScore(-Cost);
-            clickerButton.WaterIncreaseAmmount += ClickIncrease;
+            clickerButton.WaterIncreaseAmount += ClickIncrease;
             clickerButton.ScoreIncrease += ClickIncrease;
             questParent.SetActive(false);
         }
